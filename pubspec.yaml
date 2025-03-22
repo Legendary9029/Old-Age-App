@@ -1,0 +1,60 @@
+name: old_age_care_app
+description: A Flutter app providing emergency SOS, health tracking, and Next of Kin check-ins for elderly users.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🔐 Authentication
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+
+  # 🌐 State Management (Zustand Alternative)
+  flutter_riverpod: ^2.3.6
+
+  # 🛑 Emergency & Notifications
+  flutter_local_notifications: ^18.0.1
+  firebase_messaging: ^15.2.4
+
+  # 📍 Location Services
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+
+  # 💳 Finance & Payments
+  intl: ^0.20.2
+
+  # 📊 Charts & Visualization
+  fl_chart: ^0.70.2
+
+  # 🎨 UI Enhancements
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.6
+  lucide_icons: ^0.256.0  # Add Lucide Icons
+
+  # 🔉 Audio for Alerts
+  audioplayers: ^6.4.0
+
+  # 📦 Additional Required Packages
+  provider: ^6.0.0  # Add Provider for state management
+  shared_preferences: ^2.0.6  # Add Shared Preferences for local storage
+  url_launcher: ^6.0.3  # Add URL Launcher for launching URLs
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - assets/fonts/
